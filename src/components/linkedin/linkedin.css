@@ -1,0 +1,53 @@
+.posts__container {
+    width: 80%;
+    background: var(--color-bg-variant);
+    padding: 10rem;
+    border-radius: 2rem;
+    user-select: none;
+    height: 70vh;
+}
+
+iframe {
+    width: 90%;
+    height: 60vh;
+    user-select: none;
+    display: block;
+    margin: 2.5rem;
+    margin-left: 3rem;
+    margin-right: 2rem;
+    border-radius: 2rem;
+}
+
+.btn-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.postbtn {
+    text-align: center;
+    width: 80%;
+    border-radius: 5rem;
+}
+
+@media screen and (max-width: 1024px) {
+    iframe {
+        width: 80%;
+        margin-right: 2rem;
+        margin-left: 4rem;
+    }
+}
+
+/*                         Media Query (Small)                      */
+
+@media screen and (max-width: 600px) {
+    iframe {
+        width: 70%;
+        margin-left: 3rem;
+        height: 105%;
+        margin-top: 0;
+    }
+    .postbtn {
+        width: 75%;
+    }
+}
