@@ -1,15 +1,7 @@
 import React from "react";
 import "./linkedin.css";
 import { data } from "./linkedinArray";
-import { GrLinkNext } from 'react-icons/gr'
-
-import { Navigation, Pagination } from "swiper";
-
-import { Swiper, SwiperSlide } from "swiper/react/swiper-react";
-
-// Import Swiper styles
-import "swiper/swiper.min.css";
-import "swiper/modules/navigation/navigation.min.css";
+import { AiOutlineDown } from 'react-icons/ai'
 
 const Experience = () => {
   return (
@@ -17,17 +9,17 @@ const Experience = () => {
       <h5>LinkedIn</h5>
       <h2>My Posts</h2>
 
-      <Swiper className="posts__container container" modules={[Pagination, Navigation]} spaceBetween={40} slidesPerView={1} navigation pagination={{ clickable: true }}>
-        {data.map((item) => (
-          <SwiperSlide className="post" key={item.id}>
-            <iframe src={item.embed} frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
-          </SwiperSlide>
-        ))}
+      <div className="posts__container">
+      {data.map((item) => (
+        <article className="post" key={item.id}>
+          <iframe src={item.embed} title="Embedded post"></iframe>
+        </article>
+      ))}
+      </div>
 
-        <SwiperSlide className="btn-slide">
-          <a href="https://www.linkedin.com/in/eshaan-bagga/" className="btn btn-primary postbtn" target="_blank">View More Posts <GrLinkNext /></a>
-        </SwiperSlide>
-      </Swiper>
+      <div className="posts__button">
+        <a href="https://www.linkedin.com/in/eshaan-bagga/" className="btn btn-primary btn-link" target='_blank'>View More Posts <AiOutlineDown size={21} style={{paddingTop: '5px'}} /></a>
+      </div>
     </section>
   );
 };

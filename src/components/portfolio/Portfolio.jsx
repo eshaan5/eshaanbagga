@@ -4,7 +4,6 @@ import IMG from '../../assets/0.png'
 import {data} from './portfolioArray'
 
 const Portfolio = () => {
-  console.log(data);
   return (
     <section id='portfolio'>
       <h5>My Recent Works</h5>
