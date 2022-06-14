@@ -2,7 +2,7 @@ import React from 'react'
 import './footer.css'
 import { FaLinkedinIn, FaInstagram } from 'react-icons/fa'
 import { FiTwitter } from 'react-icons/fi'
-import { SiCodechef, SiLeetcode } from 'react-icons/si'
+import { SiCodechef, SiLeetcode, SiMedium } from 'react-icons/si'
 import { AiFillGithub } from 'react-icons/ai'
 
 const Footer = () => {
@@ -21,6 +21,8 @@ const Footer = () => {
 
       <div className="footer__socials">
       <a href="https://www.linkedin.com/in/eshaan-bagga/" target="_blank"><FaLinkedinIn size={28} /></a>
+      <a href="https://medium.com/@eshaanbagga" target="_blank" rel="noopener noreferrer">
+          <SiMedium size={28} /></a>
       <a href="https://www.instagram.com/_esh_tastic/" target="_blank"><FaInstagram size={28} /></a>
       <a href="https://twitter.com/Esh_tastic" target="_blank"><FiTwitter size={28} /></a>
       </div>
